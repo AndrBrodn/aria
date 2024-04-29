@@ -20,6 +20,6 @@ RUN pip install wheel numpy torch onnxruntime \
     TTS accelerate flash-attn deepspeed
 
 # Assuming the application uses Flask and the entry point is app.py
-COPY ./app.py /aria  # Ensure you have this file in your context directory
+COPY ./main.py /aria  # Ensure you have this file in your context directory
 EXPOSE 5000
 CMD ["python", "main.py"]
